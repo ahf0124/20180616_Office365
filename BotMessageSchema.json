@@ -1,0 +1,113 @@
+{
+    "type": "object",
+    "properties": {
+        "type": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        },
+        "timestamp": {
+            "type": "string"
+        },
+        "localTimestamp": {
+            "type": "string"
+        },
+        "serviceUrl": {
+            "type": "string"
+        },
+        "channelId": {
+            "type": "string"
+        },
+        "from": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "aadObjectId": {
+                    "type": "string"
+                }
+            }
+        },
+        "conversation": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "conversationType": {
+                    "type": "string"
+                }
+            }
+        },
+        "recipient": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                }
+            }
+        },
+        "textFormat": {
+            "type": "string"
+        },
+        "membersAdded": {
+            "type": "array"
+        },
+        "membersRemoved": {
+            "type": "array"
+        },
+        "text": {
+            "type": "string"
+        },
+        "attachments": {
+            "type": "array"
+        },
+        "entities": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "type": "string"
+                    },
+                    "locale": {
+                        "type": "string"
+                    },
+                    "country": {
+                        "type": "string"
+                    },
+                    "platform": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                    "type",
+                    "locale",
+                    "country",
+                    "platform"
+                ]
+            }
+        },
+        "channelData": {
+            "type": "object",
+            "properties": {
+                "tenant": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
